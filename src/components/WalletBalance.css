@@ -1,0 +1,23 @@
+.wallet-balance-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+.wallet-balance-container h2 {
+  color: #222f3e;
+  margin-bottom: 1rem;
+}
+.add-income-btn {
+  background: #10ac84;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.add-income-btn:hover {
+  background: #079992;
+}

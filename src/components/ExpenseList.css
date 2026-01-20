@@ -1,0 +1,42 @@
+.expense-list-container {
+  margin: 2rem auto;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1.5rem;
+}
+.expense-list-container h2 {
+  margin-bottom: 1rem;
+  color: #222f3e;
+}
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.expense-table th, .expense-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #f1f2f6;
+  text-align: left;
+}
+.expense-table th {
+  background: #f1f2f6;
+}
+.edit-btn, .delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+.edit-btn {
+  color: #576574;
+}
+.delete-btn {
+  color: #ee5253;
+}
+.expense-list-empty {
+  text-align: center;
+  color: #8395a7;
+  margin: 2rem 0;
+}

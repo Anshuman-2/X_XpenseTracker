@@ -1,0 +1,271 @@
+@media (min-width: 900px) {
+  .main-bg {
+    max-width: 98vw;
+    padding: 2.5rem 2rem;
+  }
+  .summary-section {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2.5rem;
+    padding: 2rem 2rem 1.5rem 2rem;
+  }
+  .wallet-box, .expense-box {
+    min-width: 340px;
+    max-width: 400px;
+    min-height: 220px;
+    margin-bottom: 0;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+    align-items: center;
+    justify-content: center;
+  }
+  .chart-section {
+    min-width: 320px;
+    max-width: 400px;
+    min-height: 220px;
+    margin: 0 0 0 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #55555533;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+  }
+  .recent-section {
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+    margin: 2rem 0 0 2rem;
+    background: #55555533;
+    border-radius: 16px;
+    padding: 1.2rem 1rem 1.5rem 1rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+  }
+  .top-expenses-section {
+    display: inline-block;
+    width: 35%;
+    vertical-align: top;
+    margin: 2rem 0 0 1.5rem;
+    background: #55555533;
+    border-radius: 16px;
+    padding: 1.2rem 1rem 1.5rem 1rem;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+  }
+  .recent-title, .top-expenses-title {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  .main-bg {
+    max-width: 100vw;
+    min-width: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+  .summary-section, .chart-section, .recent-section {
+    margin: 0.5rem 0.1rem;
+    padding: 0.7rem 0.2rem 1rem 0.2rem;
+    border-radius: 10px;
+  }
+  .wallet-box, .expense-box {
+    padding: 0.7rem 0.3rem 1rem 0.3rem;
+    border-radius: 10px;
+  }
+  .main-title {
+    font-size: 1.3rem;
+    padding: 1rem 0 0.7rem 0;
+  }
+    max-width: 1200px;
+    width: 100vw;
+    font-size: 1.05rem;
+  }
+  .wallet-amount, .expense-amount {
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    padding: 2rem 2rem 1.5rem 2rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 6px;
+  }
+
+  .recent-title {
+    width: 100vw;
+    font-size: 1.05rem;
+    margin-bottom: 0.7rem;
+  }
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #232323;
+}
+
+.main-bg {
+  background: #3a3a3a;
+  min-height: 100vh;
+  padding: 0;
+  max-width: 1200px;
+  width: 100vw;
+  margin: 0 auto;
+  box-shadow: 0 0 16px rgba(0,0,0,0.2);
+}
+
+.main-title {
+  color: #fff;
+    .summary-section {
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 1rem;
+    }
+    .chart-section, .recent-section {
+      margin: 0.5rem 0.1rem;
+      padding: 0.7rem 0.2rem 1rem 0.2rem;
+      border-radius: 10px;
+    }
+    .wallet-box, .expense-box {
+      padding: 0.7rem 0.3rem 1rem 0.3rem;
+      border-radius: 10px;
+    }
+    .main-title {
+      font-size: 1.3rem;
+      padding: 1rem 0 0.7rem 0;
+    }
+    .wallet-amount, .expense-amount {
+      font-size: 1.1rem;
+    }
+    .add-income-ui-btn, .add-expense-ui-btn {
+      font-size: 0.95rem;
+      padding: 0.5rem 1.2rem;
+      border-radius: 6px;
+    }
+    .recent-title {
+      width: 100vw;
+      font-size: 1.05rem;
+      margin-bottom: 0.7rem;
+    }
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.add-income-ui-btn {
+  background: #a3ff8a;
+  color: #232323;
+  border: none;
+  padding: 0.7rem 2.2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.add-income-ui-btn:hover {
+  background: #7be67b;
+}
+.expense-box {
+  margin-bottom: 0.5rem;
+}
+.expense-label {
+  color: #ffe082;
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+}
+.expense-amount {
+  color: #ffe082;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.add-expense-ui-btn {
+  background: #ff7b7b;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 2.2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background 0.2s;
+}
+.add-expense-ui-btn:hover {
+  background: #e55b5b;
+}
+.chart-section {
+  background: #55555533;
+  border-radius: 16px;
+  margin: 1rem;
+  padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recent-section {
+  background: #55555533;
+  border-radius: 16px;
+  margin: 1rem;
+  padding: 1.2rem 0.5rem 1.5rem 0.5rem;
+}
+.recent-title {
+  color: #fff;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/* Responsive Design (keep previous rules) */
+
+h1 {
+  text-align: center;
+  color: #222f3e;
+}
+
+/* Responsive Design */
+.wallet-balance-container,
+.expense-list-container,
+.modal-content {
+  max-width: 95vw;
+  box-sizing: border-box;
+}
+
+.expense-table {
+  font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  .expense-list-container {
+    padding: 1rem 0.5rem;
+  }
+  .modal-content {
+    min-width: 220px;
+    padding: 1rem;
+  }
+  .expense-table th, .expense-table td {
+    padding: 0.5rem 0.3rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .wallet-balance-container,
+  .expense-list-container {
+    margin: 1rem 0.2rem;
+    padding: 0.5rem;
+  }
+  .expense-table th, .expense-table td {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.1rem;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+  .modal-content {
+    min-width: 150px;
+    padding: 0.5rem;
+  }
+}
