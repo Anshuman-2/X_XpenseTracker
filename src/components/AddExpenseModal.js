@@ -3,10 +3,11 @@ import './AddExpenseModal.css';
 
 const categories = [
   'Food',
+  'Travel',
+  'Entertainment',
   'Transport',
   'Shopping',
   'Bills',
-  'Entertainment',
   'Other'
 ];
 
