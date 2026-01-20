@@ -8,7 +8,7 @@ const ExpenseList = ({ expenses, onEdit, onDelete }) => {
   }
   return (
     <div className="expense-list-container">
-      <h2>Expense History</h2>
+      <h2 className="recent-title">Recent Transactions</h2>
       <table className="expense-table">
         <thead>
           <tr>
@@ -23,7 +23,7 @@ const ExpenseList = ({ expenses, onEdit, onDelete }) => {
           {expenses.map((exp, idx) => (
             <tr key={idx}>
               <td>{exp.title}</td>
-              <td>${exp.price.toFixed(2)}</td>
+              <td>₹{exp.price}</td>
               <td>{exp.category}</td>
               <td>{exp.date}</td>
               <td>
