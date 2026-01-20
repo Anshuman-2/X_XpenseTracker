@@ -12,6 +12,7 @@ import ExpenseSummaryChart from './components/ExpenseSummaryChart';
 import ExpenseTrendsChart from './components/ExpenseTrendsChart';
 
 
+
 function App() {
   const [balance, setBalance] = useState(() => {
     const saved = localStorage.getItem('walletBalance');
@@ -24,17 +25,22 @@ function App() {
   const [showIncomeModal, setShowIncomeModal] = useState(false);
   const [showExpenseModal, setShowExpenseModal] = useState(false);
   const [editIdx, setEditIdx] = useState(null);
+  const [pendingIncome, setPendingIncome] = useState(null);
 
   useEffect(() => {
+    if (pendingIncome !== null) {
+      setBalance(prev => prev + pendingIncome);
+      setShowIncomeModal(false);
+      setPendingIncome(null);
+    }
     localStorage.setItem('walletBalance', balance);
-  }, [balance]);
+  }, [balance, pendingIncome]);
   useEffect(() => {
     localStorage.setItem('expenses', JSON.stringify(expenses));
   }, [expenses]);
 
-
   const handleAddIncome = (amount) => {
-    setBalance(prev => prev + amount);
+    setPendingIncome(amount);
   };
 
 
