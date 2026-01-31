@@ -25,27 +25,29 @@ function App() {
   const [showIncomeModal, setShowIncomeModal] = useState(false);
   const [showExpenseModal, setShowExpenseModal] = useState(false);
   const [editIdx, setEditIdx] = useState(null);
-  const [pendingIncome, setPendingIncome] = useState(null);
 
   useEffect(() => {
-    if (pendingIncome !== null) {
-      setBalance(prev => prev + pendingIncome);
-      setShowIncomeModal(false);
-      setPendingIncome(null);
-    }
     localStorage.setItem('walletBalance', balance);
-  }, [balance, pendingIncome]);
+  }, [balance]);
   useEffect(() => {
     localStorage.setItem('expenses', JSON.stringify(expenses));
   }, [expenses]);
 
   const handleAddIncome = (amount) => {
-    setPendingIncome(amount);
+    setBalance(prev => {
+      const newBalance = prev + amount;
+      setShowIncomeModal(false);
+      return newBalance;
+    });
   };
 
 
   const handleAddExpense = (expense) => {
-    setExpenses(prev => [...prev, expense]);
+    setExpenses(prev => {
+      const newExpenses = [...prev, expense];
+      setShowExpenseModal(false);
+      return newExpenses;
+    });
     setBalance(prev => prev - expense.price);
   };
 
