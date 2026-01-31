@@ -8,7 +8,7 @@ const ExpenseList = ({ expenses, onEdit, onDelete }) => {
   }
   return (
     <div className="expense-list-container">
-      <h2 className="recent-title">Recent Transactions</h2>
+      <h3 className="recent-title">Recent Transactions</h3>
       <table className="expense-table">
         <thead>
           <tr>

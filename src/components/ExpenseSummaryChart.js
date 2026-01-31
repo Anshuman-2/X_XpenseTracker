@@ -16,7 +16,7 @@ const ExpenseSummaryChart = ({ expenses }) => {
 
   return (
     <div style={{ width: '100%', height: 300 }}>
-      <h2>Expense Summary</h2>
+      <h3>Expense Summary</h3>
       <ResponsiveContainer>
         <PieChart>
           <Pie data={data} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={90} label>

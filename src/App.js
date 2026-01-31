@@ -119,8 +119,6 @@ function App() {
         expense={editIdx !== null ? expenses[editIdx] : null}
         maxAmount={balance + (editIdx !== null ? expenses[editIdx].price : 0)}
       />
-      {/* Optionally add trends chart below */}
-      {/* <ExpenseTrendsChart expenses={expenses} /> */}
     </div>
   );
 }

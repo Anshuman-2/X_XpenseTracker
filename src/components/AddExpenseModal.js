@@ -43,7 +43,7 @@ const AddExpenseModal = ({ isOpen, onClose, onAdd, maxAmount }) => {
   return (
     <div className="modal-overlay">
       <div className="modal-content">
-        <h3>Add Expense</h3>
+        <h2>Add Expense</h2>
         <form onSubmit={handleSubmit}>
           <input
             name="title"

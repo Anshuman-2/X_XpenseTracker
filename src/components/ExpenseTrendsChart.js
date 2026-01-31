@@ -14,7 +14,7 @@ const ExpenseTrendsChart = ({ expenses }) => {
 
   return (
     <div style={{ width: '100%', height: 300 }}>
-      <h2>Expense Trends</h2>
+      <h3>Expense Trends</h3>
       <ResponsiveContainer>
         <BarChart data={data} margin={{ top: 20, right: 30, left: 0, bottom: 5 }}>
           <XAxis dataKey="category" />

@@ -21,7 +21,7 @@ const AddIncomeModal = ({ isOpen, onClose, onAdd }) => {
   return (
     <div className="modal-overlay">
       <div className="modal-content">
-        <h3>Add Balance</h3>
+        <h2>Add Balance</h2>
         <form onSubmit={handleSubmit}>
           <input
             type="number"
