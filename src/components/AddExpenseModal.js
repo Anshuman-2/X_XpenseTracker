@@ -36,7 +36,6 @@ const AddExpenseModal = ({ isOpen, onClose, onAdd, maxAmount }) => {
     onAdd({ ...form, price: Number(form.price) });
     setForm({ title: '', price: '', category: '', date: '' });
     setError('');
-    onClose();
   };
 
   if (!isOpen) return null;

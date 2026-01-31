@@ -14,7 +14,6 @@ const AddIncomeModal = ({ isOpen, onClose, onAdd }) => {
     onAdd(Number(amount));
     setAmount('');
     setError('');
-    onClose();
   };
 
   if (!isOpen) return null;
