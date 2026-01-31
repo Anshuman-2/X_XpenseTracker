@@ -74,7 +74,7 @@ function App() {
       <h1 className="main-title">Expense Tracker</h1>
       <div className="summary-section">
         <div className="wallet-box">
-          <div className="wallet-label">Wallet Balance: <span className="wallet-amount">₹{balance.toLocaleString()}</span></div>
+          Wallet Balance: {balance}
           <button type="button" className="add-income-ui-btn" onClick={() => setShowIncomeModal(true)}>
             + Add Income
           </button>
